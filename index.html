@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Para Mi Princesa Nahiara 💚</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="petals"></div>
+<div id="sparkles"></div>
+
+<section class="hero">
+  <div class="glass">
+    <h1>👑 Para Mi Princesa Nahiara</h1>
+    <p>Una historia que comenzó en un live de TikTok...</p>
+    <button onclick="startJourney()">✨ Comenzar nuestra historia</button>
+  </div>
+</section>
+
+<div id="story" class="hidden">
+  <section class="chapter glass"><h2>🎮 Capítulo I</h2><p>Todo comenzó en un live de TikTok. Un amigo nos presentó y te invitamos a jugar Minecraft...</p></section>
+  <section class="chapter glass"><h2>❤️ Capítulo II</h2><p>Nos gustábamos sin decirlo. Nos celábamos sin admitirlo. Pero ambos sentíamos algo especial.</p></section>
+  <section class="chapter glass"><h2>🔥 Capítulo III</h2><p>Luego llegaron las partidas de Free Fire y cada excusa para pasar tiempo juntos.</p></section>
+  <section class="chapter glass"><h2>☎️ Capítulo IV</h2><p>Entonces llegó nuestra primera llamada. Escuchar tu voz cambió todo.</p></section>
+
+  <section class="chapter glass">
+    <h2>⏳ Hasta nuestro primer encuentro</h2>
+    <div id="countdown"></div>
+    <p>1 de abril de 2027 🇨🇱❤️🇦🇷</p>
+  </section>
+
+  <section class="chapter glass">
+    <h2>🔒 La llave de esta historia</h2>
+    <p>¿Cuál fue la primera canción que te dediqué?</p>
+    <input id="pw" placeholder="Escribe tu respuesta">
+    <button onclick="unlock()">💚 Descubrir</button>
+  </section>
+
+  <section id="secret" class="chapter glass hidden">
+    <div class="spotify">
+      <h3>🎵 Nuestra canción</h3>
+      <a href="https://open.spotify.com/track/5y2ijHECwFYWqcAHKTZgzD?si=xPsOTQy8Q-y6cKw1y-f4BA" target="_blank">Escuchar Risk It All</a>
+    </div>
+    <div id="letter"></div>
+  </section>
+
+  <section id="proposal" class="chapter glass hidden">
+    <h2>💍 ¿Quieres ser mi novia hasta el fin de los días?</h2>
+    <div class="buttons">
+      <button id="yes">💚 Sí, siempre</button>
+      <button id="no">😢 No</button>
+    </div>
+    <div id="ending" class="hidden">
+      <h2>🌷💚 Sabía que dirías que sí 💚🌷</h2>
+      <p>Gracias por escribir esta historia conmigo.</p>
+      <p>Te amo muchísimo, Princesa. — Aleksandr</p>
+    </div>
+  </section>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -3,62 +3,111 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Para Mi Princesa Nahiara 💚</title>
-<link rel="stylesheet" href="styles.css">
+<title>Para Nahiara 💙</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, sans-serif;
+}
+
+body{
+background:linear-gradient(135deg,#0f172a,#1e3a8a);
+color:white;
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+overflow:hidden;
+}
+
+.container{
+text-align:center;
+max-width:700px;
+padding:30px;
+background:rgba(255,255,255,0.08);
+backdrop-filter:blur(10px);
+border-radius:25px;
+box-shadow:0 0 25px rgba(255,255,255,0.2);
+}
+
+h1{
+font-size:3rem;
+margin-bottom:20px;
+}
+
+p{
+font-size:1.2rem;
+line-height:1.8;
+margin-bottom:20px;
+}
+
+button{
+padding:15px 30px;
+border:none;
+border-radius:50px;
+background:#60a5fa;
+color:white;
+font-size:1.1rem;
+cursor:pointer;
+transition:0.3s;
+}
+
+button:hover{
+transform:scale(1.05);
+background:#3b82f6;
+}
+
+#mensaje{
+display:none;
+margin-top:25px;
+font-size:1.3rem;
+animation:fade 1s ease;
+}
+
+@keyframes fade{
+from{opacity:0;}
+to{opacity:1;}
+}
+</style>
 </head>
+
 <body>
-<div id="petals"></div>
-<div id="sparkles"></div>
 
-<section class="hero">
-  <div class="glass">
-    <h1>👑 Para Mi Princesa Nahiara</h1>
-    <p>Una historia que comenzó en un live de TikTok...</p>
-    <button onclick="startJourney()">✨ Comenzar nuestra historia</button>
-  </div>
-</section>
+<div class="container">
 
-<div id="story" class="hidden">
-  <section class="chapter glass"><h2>🎮 Capítulo I</h2><p>Todo comenzó en un live de TikTok. Un amigo nos presentó y te invitamos a jugar Minecraft...</p></section>
-  <section class="chapter glass"><h2>❤️ Capítulo II</h2><p>Nos gustábamos sin decirlo. Nos celábamos sin admitirlo. Pero ambos sentíamos algo especial.</p></section>
-  <section class="chapter glass"><h2>🔥 Capítulo III</h2><p>Luego llegaron las partidas de Free Fire y cada excusa para pasar tiempo juntos.</p></section>
-  <section class="chapter glass"><h2>☎️ Capítulo IV</h2><p>Entonces llegó nuestra primera llamada. Escuchar tu voz cambió todo.</p></section>
+<h1>Para Nahiara 💙</h1>
 
-  <section class="chapter glass">
-    <h2>⏳ Hasta nuestro primer encuentro</h2>
-    <div id="countdown"></div>
-    <p>1 de abril de 2027 🇨🇱❤️🇦🇷</p>
-  </section>
+<p>
+Hay personas que llegan a nuestra vida y la hacen más bonita.
+Tú eres una de ellas.
+</p>
 
-  <section class="chapter glass">
-    <h2>🔒 La llave de esta historia</h2>
-    <p>¿Cuál fue la primera canción que te dediqué?</p>
-    <input id="pw" placeholder="Escribe tu respuesta">
-    <button onclick="unlock()">💚 Descubrir</button>
-  </section>
+<button onclick="mostrarMensaje()">
+Abrir mi mensaje 💌
+</button>
 
-  <section id="secret" class="chapter glass hidden">
-    <div class="spotify">
-      <h3>🎵 Nuestra canción</h3>
-      <a href="https://open.spotify.com/track/5y2ijHECwFYWqcAHKTZgzD?si=xPsOTQy8Q-y6cKw1y-f4BA" target="_blank">Escuchar Risk It All</a>
-    </div>
-    <div id="letter"></div>
-  </section>
-
-  <section id="proposal" class="chapter glass hidden">
-    <h2>💍 ¿Quieres ser mi novia hasta el fin de los días?</h2>
-    <div class="buttons">
-      <button id="yes">💚 Sí, siempre</button>
-      <button id="no">😢 No</button>
-    </div>
-    <div id="ending" class="hidden">
-      <h2>🌷💚 Sabía que dirías que sí 💚🌷</h2>
-      <p>Gracias por escribir esta historia conmigo.</p>
-      <p>Te amo muchísimo, Princesa. — Aleksandr</p>
-    </div>
-  </section>
+<div id="mensaje">
+✨ Nahiara, gracias por existir.<br><br>
+Tu sonrisa ilumina los días más grises y tu forma de ser hace especial cada momento.<br><br>
+Nunca olvides lo increíble que eres. 💙
 </div>
 
-<script src="script.js"></script>
+</div>
+
+<script>
+function mostrarMensaje(){
+const clave = prompt("Introduce la contraseña:");
+
+if(clave === "Princesa"){
+document.getElementById("mensaje").style.display = "block";
+}else{
+alert("Contraseña incorrecta 💙");
+}
+}
+</script>
+
 </body>
 </html>
